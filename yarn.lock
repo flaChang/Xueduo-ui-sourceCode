@@ -493,7 +493,7 @@ chalk@^4.1.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chokidar@^3.4.2:
+"chokidar@>=3.0.0 <4.0.0", chokidar@^3.4.2:
   version "3.5.2"
   resolved "https://registry.npmmirror.com/chokidar/download/chokidar-3.5.2.tgz#dba3976fcadb016f66fd365021d91600d01c1e75"
   integrity sha1-26OXb8rbAW9m/TZQIdkWANAcHnU=
@@ -957,6 +957,11 @@ ignore@^5.1.4:
   version "5.1.9"
   resolved "https://registry.npmmirror.com/ignore/download/ignore-5.1.9.tgz?cache=0&sync_timestamp=1635926632542&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fignore%2Fdownload%2Fignore-5.1.9.tgz#9ec1a5cbe8e1446ec60d4420060d43aa6e7382fb"
   integrity sha1-nsGly+jhRG7GDUQgBg1Dqm5zgvs=
+
+immutable@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmmirror.com/immutable/download/immutable-4.0.0.tgz#b86f78de6adef3608395efb269a91462797e2c23"
+  integrity sha1-uG943mre82CDle+yaakUYnl+LCM=
 
 import-cwd@^3.0.0:
   version "3.0.0"
@@ -1634,6 +1639,14 @@ safe-buffer@^5.1.0, safe-buffer@~5.2.0:
   version "5.2.1"
   resolved "https://registry.nlark.com/safe-buffer/download/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY=
+
+sass@^1.44.0:
+  version "1.44.0"
+  resolved "https://registry.npmmirror.com/sass/download/sass-1.44.0.tgz#619aa0a2275c097f9af5e6b8fe8a95e3056430fb"
+  integrity sha512-0hLREbHFXGQqls/K8X+koeP+ogFRPF4ZqetVB19b7Cst9Er8cOR0rc6RU7MaI4W1JmUShd1BPgPoeqmmgMMYFw==
+  dependencies:
+    chokidar ">=3.0.0 <4.0.0"
+    immutable "^4.0.0"
 
 selfsigned@^1.10.8:
   version "1.10.11"
