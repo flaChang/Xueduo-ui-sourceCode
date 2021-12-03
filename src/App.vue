@@ -1,15 +1,16 @@
 <template>
-  <div>hi</div>
-  <Dora/>
+  <div>导航栏 | 
+  <router-link to="/">Dora</router-link> |
+  <router-link to="/xxx">Dora2</router-link>
+  </div>
+  <hr>
+  <router-view/>
 </template>
 
 <script>
-import Dora from './components/dora.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    Dora
-  }
 }
 </script>
