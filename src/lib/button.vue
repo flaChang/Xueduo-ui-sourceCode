@@ -16,32 +16,31 @@ export default {
 </script>
 
 <style lang="scss">
-$h: 32px;
+$h: 44px;
+$h2: 190px;
 $border-color: #d9d9d9;
 $color: #333;
 $blue: #40a9ff;
-$radius: 4px;
 .gulu-button {
   box-sizing: border-box;
   height: $h;
-  padding: 0 12px;
+  width: $h2;
+  padding: 0 ;
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   white-space: nowrap;
-  background: white;
+  background: rgb(204, 204, 204);
   color: $color;
-  border: 1px solid $border-color;
-  border-radius: $radius;
-  box-shadow: 0 1px 0 fade-out(black, 0.95);
+  border: none;
+  
   & + & {
     margin-left: 8px;
   }
   &:hover,
   &:focus {
-    color: $blue;
-    border-color: $blue;
+    border: 2.5px solid rgb(124, 124, 124);
   }
   &:focus {
     outline: none;

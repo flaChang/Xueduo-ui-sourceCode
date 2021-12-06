@@ -1,12 +1,11 @@
 <template>
-  <div>button示例</div>
-  <h1>示例 1</h1>
+  <h2>button示例</h2>
+  <div class="button-page">示例1</div>
   <div>
-    <Button>我是按钮</Button>
-    <Button theme="link">我是按钮</Button>
-    <Button theme="text">我是按钮</Button>
-    <Button theme="button">我是按钮</Button>
-    
+    <Button>按钮</Button>
+    <Button theme="link">按钮</Button>
+    <Button theme="text">按钮</Button>
+    <Button theme="button">按钮</Button>
   </div>
 </template>
 
@@ -14,6 +13,12 @@
 import Button from "../lib/button.vue";
 export default {
   components: { Button },
-  setup() {},
+ 
 };
 </script>
+
+<style lang="scss">
+  .button-page{
+  line-height: 35px;
+  }
+</style>
