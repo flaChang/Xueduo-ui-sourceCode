@@ -58,6 +58,7 @@ export default {
 }
 .content {
   display: flex;
+  
   > aside {
     flex-shrink: 0;
   }
@@ -68,7 +69,7 @@ export default {
   }
 }
 aside {
-  background: lightblue;
+  background:  rgb(230, 230, 230);
   width: 150px;
   padding: 16px;
   position: fixed;
@@ -88,5 +89,6 @@ aside {
 }
 main {
   overflow: auto;
+  
 }
 </style>

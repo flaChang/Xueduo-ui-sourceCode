@@ -18,14 +18,12 @@ export default {
 <style lang="scss">
 $h: 44px;
 $h2: 190px;
-$border-color: #d9d9d9;
 $color: #333;
-$blue: #40a9ff;
 .gulu-button {
   box-sizing: border-box;
   height: $h;
   width: $h2;
-  padding: 0 ;
+  padding: 0;
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
@@ -34,10 +32,14 @@ $blue: #40a9ff;
   background: rgb(204, 204, 204);
   color: $color;
   border: none;
-  
-  & + & {
+  &  {
     margin-left: 8px;
+    margin-top: 8px;
+    @media (max-width: 500px) {
+      margin-left: 0px; 
+    }
   }
+ 
   &:hover,
   &:focus {
     border: 2.5px solid rgb(124, 124, 124);

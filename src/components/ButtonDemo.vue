@@ -1,11 +1,11 @@
 <template>
   <h2>button示例</h2>
-  <div class="button-page">示例1</div>
+  <div class="button-page">示例1 基本样式</div>
   <div>
-    <Button>按钮</Button>
-    <Button theme="link">按钮</Button>
-    <Button theme="text">按钮</Button>
-    <Button theme="button">按钮</Button>
+    <Button>确定</Button>
+    <Button theme="link">确定</Button>
+    <Button theme="text">确定</Button>
+    <Button theme="button">确定</Button>
   </div>
 </template>
 
