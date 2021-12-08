@@ -2,7 +2,10 @@
   <h2>dialog示例</h2>
   <div class="dialog-page">示例</div>
   <Button @click="toggle">toggle</Button>
-  <Dialog v-model:visible="x" :closeOnClickOverlay="true" :ok="f1" :cancel="f2">
+  <Dialog v-model:visible="x" 
+          :closeOnClickOverlay="true" 
+          :ok="f1" 
+          :cancel="f2">
     <template v-slot:content>
       <strong>hi</strong>
       <div>hi2</div>
@@ -11,7 +14,7 @@
       <strong>加粗的标题</strong>
     </template>
   </Dialog>
-  <div>示例2</div>
+  <div class="dialog-page">示例2</div>
   <Button @click="showDialog">show</Button>
 </template>
 
@@ -40,7 +43,8 @@ export default {
         title: h("strong", {}, "标题"),
         content: "你好",
         ok() {
-          console.log("ok");
+          console.log('ok');
+          return false
         },
         cancel() {
           console.log("cancel");

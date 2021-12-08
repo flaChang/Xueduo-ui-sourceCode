@@ -1,15 +1,34 @@
 <template>
   <div>Tabs 示例</div>
-</template> 
+  <div>示例1</div>
+  <div class="tabCover">
+    <Tabs v-model:selected="x">
+      <Tab title="导航1">内容1</Tab>
+      <Tab title="导航2">内容2</Tab>
+    </Tabs>
+  </div>
+</template>
 
-<script lang='ts'>
-import Tabs from '../lib/tabs.vue'
-import Tab from '../lib/tab.vue'
-
+<script lang="ts">
+import Tabs from "../lib/tabs.vue";
+import Tab from "../lib/tab.vue";
+import {ref} from 'vue'
 export default {
   components: {
     Tabs,
-    Tab
+    Tab,
+  },
+  setup() {
+    const x = ref('导航1')
+    return {
+      x
+    }
   }
-}
+};
 </script>
+
+<style lang="scss">
+  .tabCover {
+    border: 1px solid black;
+  }
+</style>
