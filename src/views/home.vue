@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="topnavAndBanner">
     <Topnav />
     <div class="banner">
       <h1>Dora-UI</h1>
@@ -19,13 +19,16 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.topnavAndBanner {
+  background-color: #e7eaf3;
+}
 .banner {
   padding: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: lightgreen;
+  
   > .actions {
     padding: 8px 0;
     a {
