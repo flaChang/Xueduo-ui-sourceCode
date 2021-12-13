@@ -36,6 +36,7 @@ $green: #41b983;
 $border-radius: 20px;
 .topnavAndBanner {
   background-color: #e7eaf3;
+  clip-path: ellipse(67% 60% at 50% 40%);
 }
 .features {
   >svg{
