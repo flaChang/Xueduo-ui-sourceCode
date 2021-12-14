@@ -1,9 +1,13 @@
 <template>
-  <div>
-    <button class="gulu-switch" @click="toggle" :class="{ 'gulu-checked': value }">
+  
+    <button
+      class="gulu-switch"
+      @click="toggle"
+      :class="{ 'gulu-checked': value }"
+    >
       <span></span>
     </button>
-  </div>
+  
 </template>
 
 <script lang="ts">
@@ -23,6 +27,8 @@ export default {
 <style lang="scss">
 $h: 22px;
 $h2: $h - 10px;
+$light-dark: rgb(76, 74, 72);
+$light-grey: rgb(130, 128, 127);
 .gulu-switch {
   height: $h;
   width: $h * 2.5;
@@ -41,23 +47,30 @@ $h2: $h - 10px;
     transition: left 300ms;
   }
   &.gulu-checked {
-    background: rgb(76, 74, 72);
-    border: 2px solid rgb(76, 74, 72);
+    background: $light-dark;
+    border: 2px solid $light-dark;
     > span {
       background: rgb(255, 255, 255);
       left: calc(100% - #{$h2} - 2px);
     }
     &:hover {
-      background: rgb(130, 128, 127);
-      border: 2px solid rgb(130, 128, 127);
+      background: $light-grey;
+      border: 2px solid $light-grey;
       @media (max-width: 500px) {
-        background: rgb(76, 74, 72);
-        border: 2px solid rgb(76, 74, 72);
+        background: $light-dark;
+        border: 2px solid $light-dark;
       }
     }
   }
   &:focus {
     outline: none;
   }
-}
+ 
+  
+} 
+button[disabled] {
+    cursor: not-allowed;
+    background-color: $light-grey;
+     
+    }
 </style>
