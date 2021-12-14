@@ -1,9 +1,14 @@
 <template>
-   <article class="markdown-body" >
-   <h2>介绍</h2>
-   <code>yarn dev</code>
-</article>
+  <article class="markdown-body" v-html="md"></article>
 </template>
 
-
-
+<script>
+import md from "../markdown/intro.md";
+export default {
+  data() {
+    return {
+      md,
+    };
+  },
+};
+</script>
