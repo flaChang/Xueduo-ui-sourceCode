@@ -22,6 +22,7 @@
     <Button size="big" theme="text">确定</Button>
     <Button theme="text">确定</Button>
     <Button theme="text" size="small" >确定</Button>
+  </div>
   <div class="button-page">示例3 优先级</div>
   <div>
     <Button level='main'>提醒</Button>
