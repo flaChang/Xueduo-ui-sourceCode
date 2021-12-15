@@ -91,7 +91,6 @@ $border-color: #d9d9d9;
   }
   &-wrapper {
     position: fixed;
-   
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);

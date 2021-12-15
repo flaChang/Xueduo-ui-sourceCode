@@ -24,9 +24,9 @@
         </div>
       </div>
       <div class="demo-actions">
-        <Button @click="codeVisible = !codeVisible">查看代码</Button>
+        <Button @click="codeVisiblefirst = !codeVisiblefirst">查看代码</Button>
       </div>
-      <div class="demo-code" v-if="codeVisible">
+      <div class="demo-code" v-if="codeVisiblefirst">
         <pre
           class="language-html"
           v-html="Prism.highlight(Switch1.__sourceCode, Prism.languages.html, 'html')"
@@ -35,16 +35,16 @@
     </div>
     <div class="demo">
       <h2>支持 disabled</h2>
-      <div class="demo-component" v-if="codeVisible">
+      <div class="demo-component" >
         <component :is="Switch2" />
       </div>
       <div class="demo-actions">
-        <Button>查看代码</Button>
+        <Button @click="codeVisiblesecond = !codeVisiblesecond">查看代码</Button>
       </div>
-      <div class="demo-code">
+      <div class="demo-code" v-if="codeVisiblesecond">
         <pre
           class="language-html"
-          v-html="Prism.highlight(Switch1.__sourceCode, Prism.languages.html, 'html')"
+          v-html="Prism.highlight(Switch2.__sourceCode, Prism.languages.html, 'html')"
         />
       </div>
     </div>
@@ -70,7 +70,8 @@ export default {
     component: Object,
   },
   setup(props) {
-    const codeVisible = ref(false);
+    const codeVisiblefirst = ref(false);
+    const codeVisiblesecond = ref(false);
     const normal1 = ref(true);
     const normal2 = ref(true);
     const normal3 = ref(true);
@@ -78,7 +79,8 @@ export default {
     const normal5 = ref(true);
     return {
       Prism,
-      codeVisible,
+      codeVisiblefirst,
+      codeVisiblesecond,
       normal1,
       normal2,
       normal3,
