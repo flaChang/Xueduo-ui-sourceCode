@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$basic-color: #f0f0f0;
+$basic-color: #fff;
 .layout {
   display: flex;
   flex-direction: column;
@@ -81,7 +81,6 @@ $basic-color: #f0f0f0;
   }
 }
 aside {
-  
   background: #e7eaf3;
   width: 150px;
   padding: 16px 0px;

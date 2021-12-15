@@ -2,7 +2,6 @@
   <h2>button示例</h2>
   <div class="button-page">示例1 基本样式</div>
   <div>
-    
     <Button theme="button">确定</Button>
     <Button theme="link">确定</Button>
     <Button theme="text">确定</Button>
@@ -16,28 +15,28 @@
   <div>
     <Button theme="link" size="big">确定</Button>
     <Button theme="link">确定</Button>
-    <Button theme="link" size="small" >确定</Button>
+    <Button theme="link" size="small">确定</Button>
   </div>
   <div>
     <Button size="big" theme="text">确定</Button>
     <Button theme="text">确定</Button>
-    <Button theme="text" size="small" >确定</Button>
+    <Button theme="text" size="small">确定</Button>
   </div>
   <div class="button-page">示例3 优先级</div>
   <div>
-    <Button level='main'>提醒</Button>
-    <Button >正常</Button>
-    <Button level='danger'>危险</Button>
+    <Button level="main">提醒</Button>
+    <Button>正常</Button>
+    <Button level="danger">危险</Button>
   </div>
   <div>
-    <Button theme="link" level='main'>提醒</Button>
+    <Button theme="link" level="main">提醒</Button>
     <Button theme="link">正常</Button>
-    <Button theme="link" level='danger'>危险</Button>
+    <Button theme="link" level="danger">危险</Button>
   </div>
   <div>
-    <Button theme="text" level='main'>提醒</Button>
+    <Button theme="text" level="main">提醒</Button>
     <Button theme="text">正常</Button>
-    <Button  theme="text" level='danger'>危险</Button>
+    <Button theme="text" level="danger">危险</Button>
   </div>
   <div class="button-page">示例4 disabled</div>
   <div>
@@ -50,7 +49,6 @@
     <Button loading>加载中</Button>
     <Button>加载完毕</Button>
   </div>
-
 </template>
 
 <script lang="ts">

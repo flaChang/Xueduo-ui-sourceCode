@@ -16,7 +16,7 @@
 <script lang="ts">
 import Button from "../lib/button.vue";
 import "prismjs";
-import "prismjs/themes/prism-coy.css";
+import "prismjs/themes/prism.css";
 import { computed, ref } from "vue";
 const Prism = (window as any).Prism;
 export default {
@@ -44,6 +44,7 @@ export default {
 $border-color: #d9d9d9;
 .demo {
   border: 1px solid $border-color;
+  background-color: #fff;
   margin: 16px 0 32px;
   > h2 {
     font-size: 20px;
@@ -58,6 +59,7 @@ $border-color: #d9d9d9;
     border-top: 1px dashed $border-color;
   }
   &-code {
+   
     padding: 8px 16px;
     border-top: 1px dashed $border-color;
     > pre {

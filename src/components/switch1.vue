@@ -3,19 +3,19 @@
 </demo>
 
 <template>
-  <Switch v-model:value="bool" />
+  <Switch v-model:value="normal" theme="normal"/>  
 </template>
 
 <script lang="ts">
 import { ref } from "vue";
-import Switch from "../lib/switch.vue";
+import Switch from "../lib/switch.vue";      
 export default {
   components: {
     Switch,
   },
   setup() {
-    const bool = ref(false);
-    return { bool };
+    const normal = ref(false);    
+    return { normal };
   },
 };
 </script>
