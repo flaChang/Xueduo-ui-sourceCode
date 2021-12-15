@@ -72,6 +72,9 @@ $color: #283252;
     display: none;
   }
   @media (max-width: 500px) {
+    & {
+      background-color: #ffffff;
+    }
     > .menu {
       display: none;
     }

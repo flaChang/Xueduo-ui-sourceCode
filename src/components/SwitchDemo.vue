@@ -1,52 +1,24 @@
 <template>
   <div>
     <h1>Switch 组件示例</h1>
-    <div class="demo">
-      <h2>常规用法</h2>
-      <div class="demo-component">
-        <component :is="Switch1" />
-      </div>
-      <div class="demo-actions">
-        <Button>查看代码</Button>
-      </div>
-      <div class="demo-code">
-         <pre class="language-html" v-html="Prism.highlight(Switch1.__sourceCode,Prism.languages.html,'html')"></pre>
-      </div>
-    </div>
-    <div class="demo">
-      <h2>支持 disabled</h2>
-      <div class="demo-component">
-        <component :is="Switch2" />
-      </div>
-      <div class="demo-actions">
-        <Button>查看代码</Button>
-      </div>
-      <div class="demo-code">
-        <pre class="language-html" v-html="Prism.highlight(Switch2.__sourceCode,Prism.languages.html,'html')"></pre>
-      </div>
-    </div>
+    <Demo :component="Switch1" />
+    <Demo :component="Switch2" />
   </div>
 </template>
 
 <script lang="ts">
-import { ref } from "vue";
-import Button from "../lib/button.vue";
 import Switch1 from "./switch1.vue";
 import Switch2 from "./switch2.vue";
-import 'prismjs'
-import "prismjs/themes/prism-coy.css"
+import Demo from "./Demo.vue";
 
 export default {
   components: {
-    Button,
+    Demo,
   },
   setup() {
-    const bool = ref(false);
     return {
-      bool,
       Switch1,
       Switch2,
-      Prism
     };
   },
 };

@@ -46,6 +46,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$basic-color: #f0f0f0;
 .layout {
   display: flex;
   flex-direction: column;
@@ -64,17 +65,23 @@ export default {
 }
 .content {
   display: flex;
-
   > aside {
     flex-shrink: 0;
   }
   > main {
     flex-grow: 1;
     padding: 16px;
-    background: white;
+    background: $basic-color;
+    @media (max-width: 500px) {
+      & {
+        padding: 40px 16px;
+        position: relative;
+      }
+    }
   }
 }
 aside {
+  
   background: #e7eaf3;
   width: 150px;
   padding: 16px 0px;

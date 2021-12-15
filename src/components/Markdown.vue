@@ -20,3 +20,10 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.markdown-body {
+  background-color: #f0f0f0 !important;
+}
+  
+</style>
