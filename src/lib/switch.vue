@@ -1,13 +1,9 @@
 <template>
-  
-    <button
-      class="gulu-switch"
-      @click="toggle"
-      :class="{ 'gulu-checked': value }"
-    >
-      <span></span>
-    </button>
-  
+  <button class="gulu-switch" 
+         @click="toggle" 
+         :class="{ 'gulu-checked': value }">
+    <span></span>
+  </button>
 </template>
 
 <script lang="ts">
@@ -65,12 +61,9 @@ $light-grey: rgb(130, 128, 127);
   &:focus {
     outline: none;
   }
- 
-  
-} 
+}
 button[disabled] {
-    cursor: not-allowed;
-    background-color: $light-grey;
-     
-    }
+  cursor: not-allowed;
+  background-color: $light-grey;
+}
 </style>
