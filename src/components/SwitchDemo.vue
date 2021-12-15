@@ -95,6 +95,9 @@ export default {
 $border-color: #d9d9d9;
 .demo-wrap {
   margin-right: 10px;
+   @media(max-width:500px){
+      margin-left: -1px;
+    }
 }
 .demo {
   border: 1px solid $border-color;
@@ -108,6 +111,8 @@ $border-color: #d9d9d9;
     display: flex;
     justify-content: start;
     padding: 16px;
+   
+   
   }
   &-actions {
     padding: 8px 16px;
