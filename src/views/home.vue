@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="topnavAndBanner">
-      <Topnav />
+      <div class="above">
+        <Topnav />
+      </div>
       <div class="banner">
         <h1>Dora-UI</h1>
         <h2>一个基于vue 3的自制框架</h2>
@@ -53,6 +55,11 @@ $border-radius: 20px;
   background-color: #e7eaf3;
   clip-path: ellipse(67% 60% at 50% 40%);
   width: 100%;
+  > .above{
+    @media(max-width:500px){
+      display: none;
+    }
+  }
 }
 .features {
   margin: 50px auto;
@@ -63,10 +70,10 @@ $border-radius: 20px;
   @media (min-width: 1200px) {
     width: 1200px;
   }
-  >ul {
+  > ul {
     display: flex;
     flex-wrap: wrap;
-    >li {
+    > li {
       width: 399px;
       margin: 16px 0;
       display: grid;
@@ -77,20 +84,20 @@ $border-radius: 20px;
         "icon text";
       grid-template-columns: 80px auto;
       grid-template-rows: 1fr auto;
-      >svg {
+      > svg {
         grid-area: icon;
         width: 64px;
         height: 64px;
       }
-      >h3 {
+      > h3 {
         grid-area: title;
         font-size: 28px;
       }
-      >p {
-        grid-area: text
+      > p {
+        grid-area: text;
       }
     }
-}
+  }
 }
 .banner {
   padding: 100px 0;

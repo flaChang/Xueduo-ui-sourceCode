@@ -1,7 +1,5 @@
 <template>
-  <button class="gulu-button" 
-         :class="classes" 
-         :disabled="disabled">
+  <button class="gulu-button" :class="classes" :disabled="disabled">
     <span v-if="loading" class="gulu-loadingIndicator"></span>
     <slot />
   </button>
@@ -47,15 +45,15 @@ export default {
 </script>
 
 <style lang="scss">
-$white:#fff;
-$gray: hsl(0,0%,86%);
+$white: #fff;
+$gray: hsl(0, 0%, 86%);
 $h: 38px;
 $h1: 4px;
 $priGreen: rgb(65, 185, 131);
-$warnYellow:rgb(250, 173, 66);
+$warnYellow: rgb(250, 173, 66);
 $softBlue: rgb(0, 120, 215);
 $softWhite: rgb(225, 225, 225);
-$color: #333;
+$color: #363636;
 $alert: rgb(230, 40, 100);
 .gulu-button {
   box-sizing: border-box;
@@ -64,7 +62,7 @@ $alert: rgb(230, 40, 100);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  padding:8px 22px;
+  padding: 8px 22px;
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
@@ -74,11 +72,11 @@ $alert: rgb(230, 40, 100);
   background: $priGreen;
   color: #fff;
   transition: all 0.3s;
-  &:focus{
-   border-color: rgba(232, 232, 232, 0.925);
-   box-shadow: none !important;
-   outline: none !important;
-   border-color: hsl(0,0%,91%);
+  &:focus {
+    border-color: rgba(232, 232, 232, 0.925);
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: hsl(0, 0%, 91%);
   }
   & {
     margin-left: 20px;
@@ -92,17 +90,17 @@ $alert: rgb(230, 40, 100);
     background-color: $white;
     border-width: 1px;
     border-style: solid;
-    border-color: rgb(219,219,219);
-    color: #363636;
+    border-color: rgb(219, 219, 219);
+    color: $color;
     text-align: center;
-    &:hover{
-      border-color: rgb(181,181,181);
+    &:hover {
+      border-color: rgb(181, 181, 181);
     }
   }
   &.gulu-theme-text {
-    background-color: #fff;
+    background-color: $white;
     color: $color;
-    border: 1px solid transparent; 
+    border: 1px solid transparent;
   }
   &.gulu-theme-button,
   &.gulu-theme-text,
@@ -127,9 +125,9 @@ $alert: rgb(230, 40, 100);
       color: #fff;
     }
     &[disabled] {
-      border: 1px solid rgb(191, 191, 191);
-      cursor: not-allowed;
-      color: rgb(131, 131, 131);
+      opacity: 0.5;
+      background-color: $priGreen;
+      border: 1px solid transparent;
     }
   }
   &.gulu-theme-text,
@@ -140,11 +138,14 @@ $alert: rgb(230, 40, 100);
     &.gulu-level-danger {
       color: $alert;
     }
-    &[disabled] {
-      cursor: not-allowed;
-      color: $priGreen;
-      border-color: rgb(218,218,218);
-    }
+  }
+  &.gulu-theme-text[disabled]{
+     opacity:0.5;
+  }
+  &.gulu-theme-link[disabled]{
+ opacity: 0.5;
+      color: $color;
+      border-color: rgb(218, 218, 218);
   }
   > .gulu-loadingIndicator {
     width: 14px;
