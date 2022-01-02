@@ -45,16 +45,18 @@ export default {
   components: { Topnav },
 };
 </script>
+
 <style lang="scss" scoped>
 $green: #41b983;
 $border-radius: 20px;
 .topnavAndBanner {
   background-color: #e7eaf3;
   clip-path: ellipse(67% 60% at 50% 40%);
+  width: 100%;
 }
 .features {
   margin: 50px auto;
-  width: 400px;
+  width: 100%;
   @media (min-width: 800px) {
     width: 800px;
   }
@@ -65,7 +67,7 @@ $border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
     >li {
-      width: 400px;
+      width: 399px;
       margin: 16px 0;
       display: grid;
       justify-content: start;
@@ -96,7 +98,7 @@ $border-radius: 20px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  width: 100%;
   > .actions {
     padding: 8px 0;
     a {

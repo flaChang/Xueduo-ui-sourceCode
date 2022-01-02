@@ -47,50 +47,62 @@ export default {
 </script>
 
 <style lang="scss">
-$h: 44px;
-$h2: 190px;
-$grayWhite: rgb(204, 204, 204);
-$gray: rgb(129, 129, 129);
+$white:#fff;
+$gray: hsl(0,0%,86%);
+$h: 38px;
+$h1: 4px;
+$priGreen: rgb(65, 185, 131);
+$warnYellow:rgb(250, 173, 66);
 $softBlue: rgb(0, 120, 215);
 $softWhite: rgb(225, 225, 225);
 $color: #333;
-$alert: rgb(254, 189, 56);
+$alert: rgb(230, 40, 100);
 .gulu-button {
   box-sizing: border-box;
   height: $h;
-  width: $h2;
-  padding: 0;
+  border-radius: $h1;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  padding:8px 22px;
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   white-space: nowrap;
-  background: $grayWhite;
-  color: $color;
-  border: none;
+  line-height: 1.1;
+  background: $priGreen;
+  color: #fff;
+  transition: all 0.3s;
+  &:focus{
+   border-color: rgba(232, 232, 232, 0.925);
+   box-shadow: none !important;
+   outline: none !important;
+   border-color: hsl(0,0%,91%);
+  }
   & {
     margin-left: 20px;
     margin-top: 8px;
+    margin-right: 15px;
     @media (max-width: 500px) {
       margin-left: 0px;
     }
   }
   &.gulu-theme-link {
-    background-color: #fff;
-    color: $gray;
-    &:hover,
-    &:focus {
-      color: lighten($gray, 20%);
-      border: none;
+    background-color: $white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(219,219,219);
+    color: #363636;
+    text-align: center;
+    &:hover{
+      border-color: rgb(181,181,181);
     }
   }
   &.gulu-theme-text {
     background-color: #fff;
     color: $color;
-    &:hover,
-    &:focus {
-      border: none;
-    }
+    border: 1px solid transparent; 
   }
   &.gulu-theme-button,
   &.gulu-theme-text,
@@ -108,17 +120,11 @@ $alert: rgb(254, 189, 56);
   }
   &.gulu-theme-button {
     &.gulu-level-main {
-      border: 2.5px solid $softBlue;
-      background-color: $softWhite;
-      &:hover,
-      &:focus {
-        background-color: rgb(229, 241, 251);
-        border: 2px solid rgb(22, 145, 238);
-      }
+      background-color: $warnYellow;
     }
     &.gulu-level-danger {
       background-color: $alert;
-      color: $gray;
+      color: #fff;
     }
     &[disabled] {
       border: 1px solid rgb(191, 191, 191);
@@ -129,18 +135,15 @@ $alert: rgb(254, 189, 56);
   &.gulu-theme-text,
   &.gulu-theme-link {
     &.gulu-level-main {
-      color: rgb(33, 137, 219);
+      color: $warnYellow;
     }
     &.gulu-level-danger {
       color: $alert;
-      &:hover,
-      &:focus {
-        color: $gray;
-      }
     }
     &[disabled] {
       cursor: not-allowed;
-      color: $grayWhite;
+      color: $priGreen;
+      border-color: rgb(218,218,218);
     }
   }
   > .gulu-loadingIndicator {
@@ -153,10 +156,6 @@ $alert: rgb(254, 189, 56);
     border-style: solid;
     border-width: 2px;
     animation: gulu-spin 1s infinite linear;
-  }
-  &:hover,
-  &:focus {
-    border: 2.5px solid $gray;
   }
   &:focus {
     outline: none;

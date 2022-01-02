@@ -6,23 +6,7 @@
     <Button theme="link">确定</Button>
     <Button theme="text">确定</Button>
   </div>
-  <div class="button-page">示例2 不同大小</div>
-  <div>
-    <Button size="big">确定</Button>
-    <Button>确定</Button>
-    <Button size="small">确定</Button>
-  </div>
-  <div>
-    <Button theme="link" size="big">确定</Button>
-    <Button theme="link">确定</Button>
-    <Button theme="link" size="small">确定</Button>
-  </div>
-  <div>
-    <Button size="big" theme="text">确定</Button>
-    <Button theme="text">确定</Button>
-    <Button theme="text" size="small">确定</Button>
-  </div>
-  <div class="button-page">示例3 优先级</div>
+  <div class="button-page">示例2 优先级</div>
   <div>
     <Button level="main">提醒</Button>
     <Button>正常</Button>
@@ -37,6 +21,22 @@
     <Button theme="text" level="main">提醒</Button>
     <Button theme="text">正常</Button>
     <Button theme="text" level="danger">危险</Button>
+  </div>
+  <div class="button-page">示例3 不同大小</div>
+  <div>
+    <Button size="big">确定</Button>
+    <Button>确定</Button>
+    <Button size="small">确定</Button>
+  </div>
+  <div>
+    <Button theme="link" size="big">确定</Button>
+    <Button theme="link">确定</Button>
+    <Button theme="link" size="small">确定</Button>
+  </div>
+  <div>
+    <Button size="big" theme="text">确定</Button>
+    <Button theme="text">确定</Button>
+    <Button theme="text" size="small">确定</Button>
   </div>
   <div class="button-page">示例4 disabled</div>
   <div>
