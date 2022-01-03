@@ -1,61 +1,31 @@
 <template>
   <h2>button示例</h2>
-  <div class="button-page">示例1 基本样式</div>
-  <div>
-    <Button theme="button">确定</Button>
-    <Button theme="link">确定</Button>
-    <Button theme="text">确定</Button>
-  </div>
-  <div class="button-page">示例2 优先级</div>
-  <div>
-    <Button level="main">提醒</Button>
-    <Button>正常</Button>
-    <Button level="danger">危险</Button>
-  </div>
-  <div>
-    <Button theme="link" level="main">提醒</Button>
-    <Button theme="link">正常</Button>
-    <Button theme="link" level="danger">危险</Button>
-  </div>
-  <div>
-    <Button theme="text" level="main">提醒</Button>
-    <Button theme="text">正常</Button>
-    <Button theme="text" level="danger">危险</Button>
-  </div>
-  <div class="button-page">示例3 不同大小</div>
-  <div>
-    <Button size="big">确定</Button>
-    <Button>确定</Button>
-    <Button size="small">确定</Button>
-  </div>
-  <div>
-    <Button theme="link" size="big">确定</Button>
-    <Button theme="link">确定</Button>
-    <Button theme="link" size="small">确定</Button>
-  </div>
-  <div>
-    <Button size="big" theme="text">确定</Button>
-    <Button theme="text">确定</Button>
-    <Button theme="text" size="small">确定</Button>
-  </div>
-  <div class="button-page">示例4 disabled</div>
-  <div>
-    <Button disabled>确定</Button>
-    <Button theme="link" disabled>确定</Button>
-    <Button theme="text" disabled>确定</Button>
-  </div>
-  <div class="button-page">示例5 加载按钮</div>
-  <div>
-    <Button loading>加载中</Button>
-    <Button>加载完毕</Button>
-  </div>
+  <Demo :component="Button1Demo" />
+  <Demo :component="Button2Demo" />
+  <Demo :component="Button3Demo" />
+  <Demo :component="Button4Demo" />
+  <Demo :component="Button5Demo" />
 </template>
 
 <script lang="ts">
-import Button from "../lib/button.vue";
+import Demo from "./Demo.vue";
+import Button1Demo from "./button1.vue";
+import Button2Demo from "./button2.vue";
+import Button3Demo from "./button3.vue";
+import Button4Demo from "./button4.vue";
+import Button5Demo from "./button5.vue";
 export default {
-  components: { Button },
-};
+  components: { Demo },
+setup() {
+  return {
+      Button1Demo,
+      Button2Demo,
+      Button3Demo,
+      Button4Demo,
+      Button5Demo
+    };
+}
+}
 </script>
 
 <style lang="scss">

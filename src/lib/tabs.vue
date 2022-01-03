@@ -20,7 +20,7 @@
     <div class="gulu-tabs-content">
       <component
         class="gulu-tabs-content-item"
-        :class="{ selected: c.props.title === selected }"
+        :class="{ selected: c.props?.title === selected }"
         v-for="(c, index) in defaults"
         :is="c"
         :key="index"
@@ -47,7 +47,7 @@ export default {
     const x = () => {
       const divs = navItems.value;
       const result = divs.filter((div) => div.classList.contains("selected"))[0];
-      console.log(result);
+     
       const { width } = result.getBoundingClientRect();
       indicator.value.style.width = width + "px";
       const { left: left1 } = container.value.getBoundingClientRect();
@@ -59,12 +59,15 @@ export default {
     onUpdated(x);
     const defaults = context.slots.default();
     defaults.forEach((tag) => {
-      if (tag.type !== Tab) {
+      if (tag.type === null) {
         throw new Error("Tabs的子标签必须是Tab");
       }
     });
     const titles = defaults.map((tag) => {
-      return tag.props.title;
+      if(tag.props){
+        return tag.props.title;
+      }
+      
     });
     const select = (title: string) => {
       context.emit("update:selected", title);
@@ -82,7 +85,7 @@ export default {
 </script>
 
 <style lang="scss">
-$blue: #40a9ff;
+$blue: #41b983;
 $color: #333;
 $border-color: #d9d9d9;
 .gulu-tabs {
@@ -104,7 +107,7 @@ $border-color: #d9d9d9;
     }
     &-indicator {
       position: absolute;
-      height: 3px;
+      height: 2px;
       background: $blue;
       left: 0;
       bottom: -1px;

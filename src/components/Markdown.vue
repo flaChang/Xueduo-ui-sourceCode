@@ -23,7 +23,7 @@ export default {
 
 <style lang="scss">
 .markdown-body {
-  background-color: #f0f0f0 !important;
+  background-color: #fff!important;
 }
   
 </style>

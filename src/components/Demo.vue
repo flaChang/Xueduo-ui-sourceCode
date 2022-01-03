@@ -5,7 +5,7 @@
       <component :is="component" />
     </div>
     <div class="demo-actions">
-      <Button @click="codeVisible = !codeVisible">引入代码</Button>
+      <Button @click="codeVisible = !codeVisible" theme='link'>查看引入代码</Button>
     </div>
     <div class="demo-code" v-if="codeVisible">
       <pre class="language-html" v-html="html"></pre>

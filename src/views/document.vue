@@ -71,7 +71,7 @@ $basic-color: #fff;
   > main {
     flex-grow: 1;
     padding: 16px;
-    background: $basic-color;
+    overflow: auto;
     @media (max-width: 500px) {
       & {
         padding: 40px 16px;
@@ -102,12 +102,9 @@ aside {
         text-decoration: none;
       }
       .router-link-active {
-        background: white;
+        background: $basic-color;
       }
     }
   }
-}
-main {
-  overflow: auto;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Switch 组件示例</h1>
+    <h2>Switch示例</h2>
     <div class="demo">
       <h2>常规用法以及支持不同主题</h2>
       <div class="demo-component">
@@ -117,19 +117,25 @@ $border-color: #d9d9d9;
     justify-content: start;
     padding: 16px;
     flex-wrap: wrap;
-   
+    width: 100%;
   }
   &-actions {
     padding: 8px 16px;
     border-top: 1px dashed $border-color;
+    width: 100%;
   }
   &-code {
     padding: 8px 16px;
     border-top: 1px dashed $border-color;
+    width: 100%;
     > pre {
       line-height: 1.1;
       font-family: Consolas, "Courier New", Courier, monospace;
       margin: 0;
+       overflow: auto;
+     &::-webkit-scrollbar {
+     display: none;
+  }
     }
   }
 }

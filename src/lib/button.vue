@@ -81,7 +81,7 @@ $alert: rgb(230, 40, 100);
   & {
     margin-left: 20px;
     margin-top: 8px;
-    margin-right: 15px;
+    margin-right: 6px;
     @media (max-width: 500px) {
       margin-left: 0px;
     }
@@ -108,7 +108,7 @@ $alert: rgb(230, 40, 100);
     &.gulu-size-big {
       font-size: 20px;
       height: 55px;
-      padding: 0 16px;
+      line-height: 1.3;
     }
     &.gulu-size-small {
       font-size: 12px;
