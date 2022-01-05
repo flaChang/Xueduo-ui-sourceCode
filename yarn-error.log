@@ -1,20 +1,20 @@
 Arguments: 
-  F:\Users\5555\software\nodejs\node.exe F:\Users\5555\software\yarn\bin\yarn.js add github-markdown-css
+  C:\Users\5555\.nvm\versions\node\v12.22.8\bin\node.exe F:\Users\5555\software\yarn\bin\yarn.js install --no-optional
 
 PATH: 
-  F:\Users\5555\software\cmder\vendor\git-for-windows\mingw64\bin;F:\Users\5555\software\cmder\vendor\git-for-windows\usr\bin;C:\Users\5555\bin;H:\vmware station\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\PerkinElmerInformatics\ChemOffice2018\ChemScript\Lib;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;G:\python 3.8.5;F:\gcc\bin;C:\MinGw\bin;C:\TDM-GCC-64\bin;F:\Users\5555\software\nodejs;F:\Users\5555\software\yarn\bin;G:\python 3.8.5\Scripts;G:\python 3.8.5;C:\Users\5555\AppData\Local\Microsoft\WindowsApps;H:\Microsoft VS Code\bin;C:\Users\5555\AppData\Roaming\npm;C:\Users\5555\AppData\Local\Yarn\bin;F:\Users\5555\software\webstorm\WebStorm 2021.2.3\bin
+  C:\Users\5555\.nvm\versions\node\v12.22.8\bin;F:\Users\5555\software\cmder\vendor\git-for-windows\mingw64\bin;F:\Users\5555\software\cmder\vendor\git-for-windows\usr\bin;C:\Users\5555\bin;H:\vmware station\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\PerkinElmerInformatics\ChemOffice2018\ChemScript\Lib;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;G:\python 3.8.5;F:\gcc\bin;C:\MinGw\bin;C:\TDM-GCC-64\bin;F:\Users\5555\software\yarn\bin;F:\Users\5555\software\nodejs;G:\python 3.8.5\Scripts;G:\python 3.8.5;C:\Users\5555\AppData\Local\Microsoft\WindowsApps;H:\Microsoft VS Code\bin;C:\Users\5555\AppData\Local\Yarn\bin;F:\Users\5555\software\webstorm\WebStorm 2021.2.3\bin;C:\Users\5555\AppData\Roaming\npm
 
 Yarn version: 
   1.22.5
 
 Node version: 
-  14.18.1
+  12.22.8
 
 Platform: 
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'F:\Users\5555\gulu-ui-1\node_modules\vite\node_modules\esbuild\esbuild.exe'
+  Error: EPERM: operation not permitted, unlink 'F:\Users\5555\gulu-ui-1\node_modules\vite\node_modules\.esbuild.DELETE\esbuild.exe'
 
 npm manifest: 
   {
@@ -26,13 +26,13 @@ npm manifest:
     },
     "dependencies": {
       "github-markdown-css": "^5.1.0",
-      "marked": "^1.2.9",
-      "vue": "^3.0.0-rc.1",
+      "marked": "^1.1.1",
+      "prismjs": "^1.25.0",
+      "vue": "^3.2.26",
       "vue-router": "4.0.12"
     },
     "devDependencies": {
-      "@types/marked": "^4.0.1",
-      "@vue/compiler-sfc": "^3.0.0-rc.1",
+      "@vue/compiler-sfc": "^3.2.26",
       "sass": "^1.44.0",
       "svg-sprite-loader": "^6.0.11",
       "vite": "^1.0.0-rc.1",
