@@ -3,8 +3,7 @@
 </demo>
 
 <template>
-  <Switch v-model:value="normal" theme="normal"/>
-    
+  <Switch v-model:value="normal" theme="normal"/>   
 </template>
 
 <script lang="ts">

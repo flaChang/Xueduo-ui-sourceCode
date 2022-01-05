@@ -4,7 +4,7 @@
 <template>
 <div>
   <Button @click="toggle">打开对话框</Button>
-  <Dialog v-model:visible="x" :closeOnClickOverlay="false" :ok="f1" :cancel="f2">
+  <Dialog v-model:visible="appearDl" :closeOnClickOverlay="false" :ok="f1" :cancel="f2">
     <template v-slot:content>
       <strong>hi</strong>
       <div>hi2</div>
@@ -28,16 +28,16 @@ export default {
     Button
   },
   setup() {
-    const x = ref(false)
+    const appearDl = ref(false)
     const toggle = () => {
-      x.value = !x.value
+      appearDl.value = !appearDl.value
     }
     const f1 = () => {
       return false
     }
     const f2 = () => {}
     return {
-      x,
+      appearDl,
       toggle,
       f1,
       f2

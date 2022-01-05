@@ -1,8 +1,17 @@
 <template>
   <div>
-    <h2>Switch示例</h2>
+    <h2>switch示例</h2>
     <div class="demo">
       <h2>常规用法以及支持不同主题</h2>
+      <div class="markdown-body">
+        以下样式对应的参数<code>theme</code>的值分别为
+        <code>normal</code
+        >、<code>primary</code>、<code>success</code>、<code>info</code>、
+        <code>warning</code
+        >、<code>danger</code>。<br />还可以设置<code>setup(){}</code>中的<code
+          >const normal=ref(true)</code
+        >来使得<code>switch</code>的初始状态为选择状态。
+      </div>
       <div class="demo-component">
         <div class="demo-wrap">
           <component :is="Switch1" />
@@ -24,7 +33,9 @@
         </div>
       </div>
       <div class="demo-actions">
-        <Button theme='link' @click="codeVisiblefirst = !codeVisiblefirst">查看代码</Button>
+        <Button theme="link" @click="codeVisiblefirst = !codeVisiblefirst"
+          >查看代码</Button
+        >
       </div>
       <div class="demo-code" v-if="codeVisiblefirst">
         <pre
@@ -35,11 +46,13 @@
     </div>
     <div class="demo">
       <h2>支持 disabled</h2>
-      <div class="demo-component" >
+      <div class="demo-component">
         <component :is="Switch2" />
       </div>
       <div class="demo-actions">
-        <Button theme='link' @click="codeVisiblesecond = !codeVisiblesecond">查看代码</Button>
+        <Button theme="link" @click="codeVisiblesecond = !codeVisiblesecond"
+          >查看代码</Button
+        >
       </div>
       <div class="demo-code" v-if="codeVisiblesecond">
         <pre
@@ -97,9 +110,9 @@ export default {
 $border-color: #d9d9d9;
 .demo-wrap {
   margin-right: 10px;
-   @media(max-width:500px){
-      margin-left: -1px;
-    }
+  @media (max-width: 500px) {
+    margin-left: -1px;
+  }
 }
 .demo {
   border: 1px solid $border-color;
@@ -132,11 +145,17 @@ $border-color: #d9d9d9;
       line-height: 1.1;
       font-family: Consolas, "Courier New", Courier, monospace;
       margin: 0;
-       overflow: auto;
-     &::-webkit-scrollbar {
-     display: none;
-  }
+      overflow: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
+  }
+  > .markdown-body{
+    border-bottom: 1px dashed $border-color;
+    padding: 8px 16px;
+    line-height: 1.8 !important;
+    
   }
 }
 </style>
