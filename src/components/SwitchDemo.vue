@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="demo-actions">
-        <Button @click="codeVisiblefirst = !codeVisiblefirst">查看代码</Button>
+        <Button theme='link' @click="codeVisiblefirst = !codeVisiblefirst">查看代码</Button>
       </div>
       <div class="demo-code" v-if="codeVisiblefirst">
         <pre
@@ -39,7 +39,7 @@
         <component :is="Switch2" />
       </div>
       <div class="demo-actions">
-        <Button @click="codeVisiblesecond = !codeVisiblesecond">查看代码</Button>
+        <Button theme='link' @click="codeVisiblesecond = !codeVisiblesecond">查看代码</Button>
       </div>
       <div class="demo-code" v-if="codeVisiblesecond">
         <pre
