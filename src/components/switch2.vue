@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import { ref } from "vue";
-import Switch from "../lib/switch.vue";
+import {Switch} from "../lib/index";
 export default {
   components: {
     Switch,
