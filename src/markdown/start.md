@@ -4,7 +4,7 @@
 然后在你的代码中用以下方式引入该组件库。
 
 ```
-import {Button, Tabs, Switch, Dialog} from "dora-ui"
+import {Button, Switch, Dialog, openDialog, Tab, Tabs} from "xueduo-ui"
 ```
 
 ## Vue 单文件组件
@@ -18,7 +18,7 @@ import {Button, Tabs, Switch, Dialog} from "dora-ui"
   </div>
 </template>
 <script>
-import {Button, Tabs, Switch, Dialog} from "dora-ui"
+import {Button, Switch, Dialog, openDialog, Tab, Tabs} from "xueduo-ui"
 export default {
   components: {Button}
 }

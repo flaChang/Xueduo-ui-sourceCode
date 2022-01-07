@@ -3,13 +3,13 @@
 打开终端运行下列命令：
 
 ```
-npm install dora-ui
+npm install xueduo-ui
 ```
 
 或
 
 ```
-yarn add dora-ui
+yarn add xueduo-ui
 ```
 
 下一节：[开始使用](#/doc/start)

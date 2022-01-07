@@ -10,7 +10,10 @@
         <code>warning</code
         >、<code>danger</code>。<br />还可以设置<code>setup(){}</code>中的<code
           >const normal=ref(true)</code
-        >来使得<code>switch</code>的初始状态为选择状态。
+        >来使得<code>switch</code>的初始状态为选择状态。<br />如果你通过<code>npm</code>或<code>yarn</code>来引入该组件库，引入组件的代码应为
+        <code
+          >import { Button, Switch, Dialog, openDialog, Tabs, Tab } from 'xueduo-ui'</code
+        >
       </div>
       <div class="demo-component">
         <div class="demo-wrap">
@@ -33,13 +36,15 @@
         </div>
       </div>
       <div class="demo-actions">
-        <Button theme="link" @click="codeVisiblefirst = !codeVisiblefirst"
-          v-if="codeVisiblefirst">隐藏代码</Button
+        <Button
+          theme="link"
+          @click="codeVisiblefirst = !codeVisiblefirst"
+          v-if="codeVisiblefirst"
+          >隐藏代码</Button
         >
-        <Button theme="link" @click="codeVisiblefirst = !codeVisiblefirst"
-          v-else>查看代码</Button
+        <Button theme="link" @click="codeVisiblefirst = !codeVisiblefirst" v-else
+          >查看代码</Button
         >
-        
       </div>
       <div class="demo-code" v-if="codeVisiblefirst">
         <pre
@@ -54,11 +59,14 @@
         <component :is="Switch2" />
       </div>
       <div class="demo-actions">
-        <Button theme="link" @click="codeVisiblesecond = !codeVisiblesecond"
-          v-if="codeVisiblesecond">隐藏代码</Button
+        <Button
+          theme="link"
+          @click="codeVisiblesecond = !codeVisiblesecond"
+          v-if="codeVisiblesecond"
+          >隐藏代码</Button
         >
-        <Button theme="link" @click="codeVisiblesecond = !codeVisiblesecond"
-          v-else>查看代码</Button
+        <Button theme="link" @click="codeVisiblesecond = !codeVisiblesecond" v-else
+          >查看代码</Button
         >
       </div>
       <div class="demo-code" v-if="codeVisiblesecond">
@@ -158,11 +166,10 @@ $border-color: #d9d9d9;
       }
     }
   }
-  > .markdown-body{
+  > .markdown-body {
     border-bottom: 1px dashed $border-color;
     padding: 8px 16px;
     line-height: 1.8 !important;
-    
   }
 }
 </style>

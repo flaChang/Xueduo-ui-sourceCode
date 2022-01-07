@@ -5,7 +5,7 @@ git init &&
 git add . &&
 git commit -m 'update' &&
 git branch -M main &&
-git remote add origin git@github.com:flaChang/Dora-UI-website.git &&
+git remote add origin git@github.com:flaChang/Xueduo-UI-website.git &&
 git push -f -u origin main &&
 cd - 
 echo https://flachang.github.io/Dora-UI-website/index.html#/
