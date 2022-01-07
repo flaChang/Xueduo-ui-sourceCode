@@ -34,8 +34,12 @@
       </div>
       <div class="demo-actions">
         <Button theme="link" @click="codeVisiblefirst = !codeVisiblefirst"
-          >查看代码</Button
+          v-if="codeVisiblefirst">隐藏代码</Button
         >
+        <Button theme="link" @click="codeVisiblefirst = !codeVisiblefirst"
+          v-else>查看代码</Button
+        >
+        
       </div>
       <div class="demo-code" v-if="codeVisiblefirst">
         <pre
@@ -51,7 +55,10 @@
       </div>
       <div class="demo-actions">
         <Button theme="link" @click="codeVisiblesecond = !codeVisiblesecond"
-          >查看代码</Button
+          v-if="codeVisiblesecond">隐藏代码</Button
+        >
+        <Button theme="link" @click="codeVisiblesecond = !codeVisiblesecond"
+          v-else>查看代码</Button
         >
       </div>
       <div class="demo-code" v-if="codeVisiblesecond">
